@@ -9,4 +9,4 @@ if test ! -f nvidia-driver.run; then
   wget -O nvidia-driver.run $nvidia_driver_uri
 fi
 
-docker build -t opengl-nvidia:${nvidia_version} .
+docker build -t opengl-nvidia-ubuntu:${nvidia_version} .

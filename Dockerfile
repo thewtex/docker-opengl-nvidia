@@ -1,4 +1,4 @@
-FROM debian
+FROM ubuntu:14.04
 MAINTAINER Matt McCormick <matt@mmmccormick.com>
 
 RUN apt-get update
