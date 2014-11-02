@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:jessie
 MAINTAINER Matt McCormick <matt@mmmccormick.com>
 
 RUN apt-get update
