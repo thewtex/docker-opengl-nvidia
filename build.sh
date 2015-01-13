@@ -10,3 +10,4 @@ if test ! -f nvidia-driver.run; then
 fi
 
 docker build -t opengl-nvidia-ubuntu:${nvidia_version} .
+docker tag opengl-nvidia-ubuntu:${nvidia_version} opengl-nvidia-ubuntu:latest

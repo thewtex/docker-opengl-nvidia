@@ -2,7 +2,7 @@ FROM ubuntu:14.04
 MAINTAINER Matt McCormick <matt@mmmccormick.com>
 
 RUN apt-get update
-RUN apt-get -y --force-yes install x-window-system
+RUN apt-get install -y x-window-system
 RUN apt-get install -y binutils
 RUN apt-get install -y mesa-utils
 RUN apt-get install -y module-init-tools
