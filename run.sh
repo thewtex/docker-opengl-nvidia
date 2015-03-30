@@ -1,6 +1,6 @@
 #!/bin/sh
 
-version_gt() { test "$(echo "$@" | tr " " "\n" | sort -V | tail -n 1)" == "$1"; }
+version_gt() { test "$(echo "$@" | tr " " "\n" | sort -V | tail -n 1)" = "$1"; }
 docker_version=$(docker version | grep 'Client version' | awk '{split($0,a,":"); print a[2]}' | tr -d ' ')
 # Docker 1.3.0 or later is required for --device
 if ! version_gt "${docker_version}" "1.2.0"; then
